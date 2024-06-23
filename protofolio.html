@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for profile image */
+        .profile-img {
+            width: 200px; /* Adjusted profile image size for demo */
+            height: 200px; /* Adjusted profile image size for demo */
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out; /* Smooth transition for scale effect */
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1); /* Scale up the image on hover */
+        }
+
+        /* Style for contact information list */
+        #contact ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #contact ul li {
+            margin-bottom: 10px;
+            color: black; /* Text color for contact details */
+        }
+
+        /* Style for project sections */
+        #projects .project {
+            background: linear-gradient(135deg, #a846d6, #393f86); /* Gradient background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Added margin bottom for spacing */
+            color: black; /* Text color */
+            transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+        }
+
+        #projects .project:hover {
+            transform: translateY(-5px); /* Move the box up slightly on hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+        }
+
+        #projects h2 {
+            font-size: 2rem; /* Adjusted font size for the Projects heading */
+            margin-bottom: 20px; /* Added margin bottom for spacing */
+            color: black; /* Text color for the Projects heading */
+        }
+
+        .project h3 {
+            margin-top: 0;
+            font-size: 1.5rem; /* Adjusted font size for project titles */
+            color: black; /* Text color for project titles */
+        }
+
+        .project p {
+            margin-bottom: 0;
+            font-size: 1rem; /* Adjusted font size for project descriptions */
+            color: black; /* Text color for project descriptions */
+        }
+
+        /* Style for About Me section */
+        #about {
+            background: #543da5; /* Light gray background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Added margin bottom for spacing */
+            color: black; /* Text color */
+        }
+
+        #about h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #e9e3ec; /* Purple color for heading */
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Style for Education section */
+        #education {
+            background: linear-gradient(135deg, #a846d6, #393f86); /* Light gray background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Added margin bottom for spacing */
+            color: black; /* Text color */
+        }
+
+        #education h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333; /* Dark color for heading */
+        }
+
+        .education-entry {
+            margin-bottom: 20px;
+        }
+
+        .education-entry h3 {
+            margin: 0;
+            font-size: 1.5rem; /* Adjusted font size for degree titles */
+            color: #0f1314; /* Dark color for degree titles */
+        }
+
+        .education-entry p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            color: #070408; /* Medium gray color for institution and details */
+        }
+
+        /* Style for Skill Set section */
+        #skills {
+            background: linear-gradient(to bottom right, #6e63ff, #9b9bb9); /* Light gray background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Added margin bottom for spacing */
+            color: black; /* Text color */
+        }
+
+        #skills h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333; /* Dark color for heading */
+        }
+
+        .skill-group {
+            margin-bottom: 20px;
+        }
+
+        .skill-category {
+            position: relative;
+            background: linear-gradient(135deg, #a846d6, #393f86);;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-category:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 20px);
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent #693fa8 transparent;
+        }
+
+        .skill-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Profile image added -->
+            <img src="C:\Users\91859\Pictures\Saved Pictures\profile.jpg" alt="Profile Picture" class="profile-img">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello! I'm Chaithanya Lakshmi</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Chaithanya Lakshmi, currently pursuing my B.E with specialization in Artificial Intelligence and Machine Learning. Over the years, I have participated in many Hackathons and workshops which have enhanced my technical skills.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-entry">
+            <h3>Bachelor of Engineering in Artificial Intelligence and Machine Learning</h3>
+            <p><strong>Institution:</strong> Canara Engineering College</p>
+            <p><strong>Year:</strong> 2021- 2025</p>
+            <p><strong>Achievements:</strong> Participated in multiple hackathons and technical workshops, enhanced technical skills.</p>
+        </div>
+        <div class="education-entry">
+            <h3>Pre-University Course (PUC) in Science</h3>
+            <p><strong>Institution:</strong> S.AP.H.S.S Agalpady College</p>
+            <p><strong>Year:</strong> 2019 - 2021</p>
+            <p><strong>Achievements:</strong>  Developed foundational knowledge in science and mathematics.</p>
+        </div>
+        <!-- Add more education entries as needed -->
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>IOT-Cooker Whistle Counter and Gas Leakage Detection</h3>
+            <p>This system is our innovative project based on IoT that aims to enhance kitchen safety and efficiency. It combines the functionalities of a cooker whistle counter and a gas leakage detection system, providing real-time monitoring and alerts to prevent potential accidents.</p>
+        </div>
+        <div class="project">
+            <h3>Pharmacy Management System</h3>
+            <p>The Pharmacy Management System is designed to create a centralized database management system for medicines. It automates tasks, minimizes errors, and offers modern conveniences like online ordering.</p>
+        </div>
+        <div class="project">
+            <h3>Smart Grading System</h3>
+            <p>A user-friendly web application built with Python and Streamlit, aiming to simplify and streamline the scholarship application process.</p>
+        </div>
+        <div class="project">
+            <h3>Air Pollution Detection</h3>
+            <p>This project involves an air pollution detection system using Arduino to monitor air quality by detecting various pollutants and transmitting data wirelessly to a server for analysis and visualization.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="skills">
+        <h2>Skill Set</h2>
+        <div class="skill-group">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>Basic knowledge on </li>
+                    <li>C</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>DBMS</li>
+                    <!-- Add more technical skills as needed -->
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Non-Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Communication</li>
+                    <li>Time Management</li>
+                    <li>Leadership</li>
+                    <!-- Add more non-technical skills as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li><strong>Name:</strong> Chaithanya Lakshmi</li>
+            <li><strong>Mobile no:</strong> 8590320340</li>
+            <li><strong>Email:</strong> lakshmichaithanya40@gmail.com</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chaithanya-lakshmi-b507b1228">Chaithanya Lakshmi</a></li>
+            <li><strong>Resume:</strong> <a href="https://drive.google.com/file/d/1kQAOpIY3TA0SxIg-GmE6JqiJEQZ2TeU6/view?usp=drivesdk">My Resume</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <!-- Footer content can go here -->
+    </footer>
+</body>
+</html>
